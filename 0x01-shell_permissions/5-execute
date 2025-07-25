@@ -1,2 +1,3 @@
 #!/bin/bash
-This script adds execute permission to the owner of the file named hello
+chmod u+x hello
+
