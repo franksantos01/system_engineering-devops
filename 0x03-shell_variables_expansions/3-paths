@@ -1,5 +1,2 @@
 #!/bin/bash
-# Count directories in PATH, ignoring empty entries
-
-# Replace ':' with newline, filter out empty lines, count remaining lines
 echo "$PATH" | tr ':' '\n' | grep -c .
