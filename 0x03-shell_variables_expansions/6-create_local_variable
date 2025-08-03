@@ -1,2 +1,3 @@
 #!/bin/bash
-myfunc() { local BEST=School; }
+myfunc() { local BEST=School
+}
