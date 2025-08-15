@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# This script displays the PID and full command of all processes containing "bash"
+# Display PID and full command of bash processes
 
-pgrep -a bash | while read -r pid cmd; do
+ps -C bash -o pid= -o args= | while read -r pid cmd; do
     echo "$pid $cmd"
 done
