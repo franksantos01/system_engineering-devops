@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script lists all currently running processes including background processes in a user-friendly format
 
-ps -e --forest -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
+ps -e --forest -o user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command --sort=pid | awk 'NR==1{$1="USER"; $9="STARTED"; $12="COMMAND"; print $0; next} {print}'
