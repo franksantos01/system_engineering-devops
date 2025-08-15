@@ -1,3 +1,2 @@
 #!/bin/bash
-# Adds 128 to the value of TRUEKNOWLEDGE and prints the result
 echo $((TRUEKNOWLEDGE + 128))
